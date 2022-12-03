@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Helvetica", bold;
+  src: url(/IT_Generation/Get\ acquainted/fonts/helvetica_bold.ttf) format('truetype');
+}
+body{
+  font-family: 'Helvetica';
+  font-size: 80px;
+  line-height: 35px;
+  color: #606060;
+}
+h1, h2{
+  color: #0844a4;
+}
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr minmax(100px, auto)/ 1fr;
+  grid-template-areas: 
+  "acquainted"
+  "about"
+  "experience"
+  "start-interests"
+  "last_block"
+  "footer";
+}
+
+.acquainted{
+  grid-area: acquainted; 
+}
+.about {
+  grid-area: about;
+}
+.sidebar {
+}
+.sidebar_menu {
+}
+.sidebar_list {
+}
+.sidebar_link {
+}
+.title_about {
+}
+.about_container {
+}
+.my_photo {
+}
+.about_content {
+}
+.my_strengths {
+}
+.my_goal {
+}
+.my_dream {
+}
+.experience {
+  grid-area: experience;
+}
+.start-interests {
+  grid-area: start-interests;
+}
+.last_block {
+  grid-area: last_block;
+}
+.footer {
+  grid-area: footer;
+  background-color: aqua;
+}
+
