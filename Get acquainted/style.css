@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Helvetica";
-  font-size: 30px;  
+  font-size: 30px;
   color: #606060;
 }
 h1,
@@ -61,27 +61,27 @@ h2 {
 }
 .acquainted_buttom {
   margin: 30px 0;
-  display: inline-block;	
-	box-sizing: border-box;
-	padding: 0 25px;		
-	border: 1px solid rgb(20, 6, 6);
-	border-radius: 10px;
-	width: 300px;  
-  height: 100px;	
-	font-size: 40px;
-	font-weight: 600;	
-	color: white;
-	background-color: RGB(14, 41, 249);	
-	cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  border: 1px solid rgb(20, 6, 6);
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  background-color: RGB(14, 41, 249);
+  cursor: pointer;
 }
 .acquainted_buttom:hover {
-	transition: all 0.2s;
-	box-shadow: 0 7px 14px RGB(14, 41, 249), 0 3px 6px RGB(14, 41, 249);
+  transition: all 0.2s;
+  box-shadow: 0 7px 14px RGB(14, 41, 249), 0 3px 6px RGB(14, 41, 249);
 }
 .acquainted_buttom:active {
-	background-color: RGB(10, 21, 200);
+  background-color: RGB(10, 21, 200);
 }
-.button_block_link{
+.button_block_link {
   color: white;
 }
 /* end let's get acquainted */
@@ -91,40 +91,156 @@ h2 {
   grid-area: about;
   grid-auto-rows: auto;
   height: 100vh;
+  position: relative;
 }
 .sidebar {
 }
 .sidebar_menu {
+  margin: 50px 0;
 }
 
 .sidebar_list {
   list-style-type: none;
-  display: flex; 
+  display: flex;
+
+  justify-content: end;
 }
 
 .sidebar_link {
+  box-sizing: border-box;
   display: block;
   margin-left: 10px;
-  border-right: 1px solid grey;
+  padding: 0 35px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #0844a4;
+  font-weight: 600;
 }
-.sidebar_list {
-  list-style-type: none;
-  display: flex; 
-  
+.sidebar_list li:nth-child(-n + 3) {
+  border-right: 3px solid RGB(202, 202, 202);
 }
+.sidebar_link:link {
+  color: #0844a4;
+}
+
+.sidebar_link:visited {
+  color: #0844a4;
+}
+
+.sidebar_link:focus {
+  color: #7b93b8;
+}
+
+.sidebar_link:hover {
+  box-sizing: border-box;
+  color: #010a18;
+}
+
+.sidebar_link:active {
+  color: #7b93b8;
+}
+
 .title_about {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin-left: 200px;
+  margin-bottom: 15px;
 }
 .about_container {
+  display: flex;
+  justify-content: space-around;
 }
 .my_photo {
 }
+.title_about_photo {
+  width: 400px;
+  height: 450px;
+  border-radius: 50px 100px;
+}
 .about_content {
+  display: flex;
+  flex-direction: column;  
+}
+.about_content_me {
+  font-size: 20px;
+  align-self: center;
+  width: 50vh;
+}
+.my_qualities{
+  display: flex;
+  gap: 150px;
+  margin-top: 100px;  
 }
 .my_strengths {
+  position: relative;
+  width: 300px;
+}
+.my_strengths:before {
+  content: '';
+  background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
+  background-size: 80px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  margin: 20px 0px 0px -100px;
+}
+.my_strengths:hover:before {
+ background-color: rgb(151, 210, 235);
 }
 .my_goal {
+  position: relative;
+  width: 300px;
+}
+.my_goal:before {
+  content: '';
+  background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
+  background-size: 80px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  margin: 20px 0px 0px -100px;
+}
+.my_goal:hover:before {
+ background-color: rgb(151, 210, 235);
 }
 .my_dream {
+  position: relative;
+  width: 300px;
+}
+.my_dream:before {
+  content: '';
+  background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
+  background-size: 80px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  margin: 20px 0px 0px -100px;
+}
+.my_dream:hover:before {
+ background-color: rgb(151, 210, 235);
+}
+.to_top {
+  right: 50px;
+  bottom: 50px;
+  position: absolute;
+  text-decoration: none;
+  font-weight: 600;
 }
 .experience {
   grid-area: experience;
