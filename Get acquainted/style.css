@@ -1,42 +1,116 @@
 @font-face {
   font-family: "Helvetica", bold;
-  src: url(/IT_Generation/Get\ acquainted/fonts/helvetica_bold.ttf) format('truetype');
+  src: url(/IT_Generation/Get\ acquainted/fonts/helvetica_bold.ttf)
+    format("truetype");
 }
-body{
-  font-family: 'Helvetica';
-  font-size: 80px;
-  line-height: 35px;
+body {
+  font-family: "Helvetica";
+  font-size: 30px;  
   color: #606060;
 }
-h1, h2{
+h1,
+h2 {
   color: #0844a4;
 }
 .wrapper {
   min-height: 100%;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr minmax(100px, auto)/ 1fr;
-  grid-template-areas: 
-  "acquainted"
-  "about"
-  "experience"
-  "start-interests"
-  "last_block"
-  "footer";
+  grid-template:
+    "acquainted" 1fr
+    "about" 1fr
+    "experience" 1fr
+    "start-interests" 1fr
+    "last_block" 1fr
+    "footer" minmax(100px, auto);
+  grid-auto-rows: auto;
 }
 
-.acquainted{
-  grid-area: acquainted; 
+/* start let's get acquainted */
+.acquainted {
+  grid-area: acquainted;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.acquainted:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(/IT_Generation/Get\ acquainted/image/ren.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.acquainted_conten {
+  font-size: 50px;
+  border: 5px solid #0844a4;
+  padding: 40px;
+  z-index: 2;
+}
+.acquainted_button_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acquainted_buttom {
+  margin: 30px 0;
+  display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;		
+	border: 1px solid rgb(20, 6, 6);
+	border-radius: 10px;
+	width: 300px;  
+  height: 100px;	
+	font-size: 40px;
+	font-weight: 600;	
+	color: white;
+	background-color: RGB(14, 41, 249);	
+	cursor: pointer;
+}
+.acquainted_buttom:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px RGB(14, 41, 249), 0 3px 6px RGB(14, 41, 249);
+}
+.acquainted_buttom:active {
+	background-color: RGB(10, 21, 200);
+}
+.button_block_link{
+  color: white;
+}
+/* end let's get acquainted */
+
+/* start about */
 .about {
   grid-area: about;
+  grid-auto-rows: auto;
+  height: 100vh;
 }
 .sidebar {
 }
 .sidebar_menu {
 }
+
 .sidebar_list {
+  list-style-type: none;
+  display: flex; 
 }
+
 .sidebar_link {
+  display: block;
+  margin-left: 10px;
+  border-right: 1px solid grey;
+}
+.sidebar_list {
+  list-style-type: none;
+  display: flex; 
+  
 }
 .title_about {
 }
@@ -65,4 +139,3 @@ h1, h2{
   grid-area: footer;
   background-color: aqua;
 }
-
