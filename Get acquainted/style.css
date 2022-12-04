@@ -25,6 +25,14 @@ h2 {
   grid-auto-rows: auto;
 }
 
+.to_top {
+  right: 50px;
+  bottom: 50px;
+  position: absolute;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* start let's get acquainted */
 .acquainted {
   grid-area: acquainted;
@@ -102,7 +110,6 @@ h2 {
 .sidebar_list {
   list-style-type: none;
   display: flex;
-
   justify-content: end;
 }
 
@@ -116,9 +123,11 @@ h2 {
   color: #0844a4;
   font-weight: 600;
 }
+
 .sidebar_list li:nth-child(-n + 3) {
   border-right: 3px solid RGB(202, 202, 202);
 }
+
 .sidebar_link:link {
   color: #0844a4;
 }
@@ -151,31 +160,35 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-.my_photo {
-}
+
 .title_about_photo {
   width: 400px;
   height: 450px;
   border-radius: 50px 100px;
 }
+
 .about_content {
   display: flex;
   flex-direction: column;  
 }
+
 .about_content_me {
   font-size: 20px;
   align-self: center;
   width: 50vh;
 }
+
 .my_qualities{
   display: flex;
   gap: 150px;
   margin-top: 100px;  
 }
+
 .my_strengths {
   position: relative;
   width: 300px;
 }
+
 .my_strengths:before {
   content: '';
   background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
@@ -190,13 +203,16 @@ h2 {
   opacity: 0.5;
   margin: 20px 0px 0px -100px;
 }
+
 .my_strengths:hover:before {
  background-color: rgb(151, 210, 235);
 }
+
 .my_goal {
   position: relative;
   width: 300px;
 }
+
 .my_goal:before {
   content: '';
   background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
@@ -211,13 +227,16 @@ h2 {
   opacity: 0.5;
   margin: 20px 0px 0px -100px;
 }
+
 .my_goal:hover:before {
  background-color: rgb(151, 210, 235);
 }
+
 .my_dream {
   position: relative;
   width: 300px;
 }
+
 .my_dream:before {
   content: '';
   background-image: url(/IT_Generation/Get\ acquainted/image/interface_checkmark_check_success_circle_icon_133028.svg);
@@ -232,26 +251,224 @@ h2 {
   opacity: 0.5;
   margin: 20px 0px 0px -100px;
 }
+
 .my_dream:hover:before {
  background-color: rgb(151, 210, 235);
 }
-.to_top {
-  right: 50px;
-  bottom: 50px;
-  position: absolute;
-  text-decoration: none;
-  font-weight: 600;
-}
+/* end about */
+
+/* start experience */
 .experience {
+  position: relative;
   grid-area: experience;
+  height: 100vh;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
+.experience_title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.experince_block_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto ;
+  grid-template-areas: 
+  'not_frontend diagram in_frontent';
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+.experience_not_frontend {
+  grid-area: not_frontend;
+  justify-self: center;
+  width: 450px;
+  height: auto;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.experience_not_frontend_content{
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+}
+
+.diagramblock {
+  grid-area: diagram;
+  justify-self: center;  
+}
+.pie-container {
+    position: relative;    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.pie-container::after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 50;
+    width: 50%;
+    height: 50%;
+    color: white;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+}
+
+.pie{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+    clip: rect(0px, 75px, 150px, 0px);
+}
+
+#safari{
+    z-index: 10;
+    background-color: #aaaaaa;
+    transform: rotate(-20deg);
+}
+
+#ie {
+    z-index: 20;
+    background-color: #0074d9;
+    transform: rotate(160deg);
+}
+
+#firefox {
+    z-index: 30;
+    background-color: #ff851b;
+    transform: rotate(20deg);
+}
+
+#chrome {
+    z-index: 40;
+    background-color: #2ecc40;
+    transform: rotate(100deg);
+}
+
+.stats {
+    float: left;
+    margin-left: 50px;
+}
+
+ul {
+   list-style: none;
+}
+
+li{
+    position: relative;
+    margin: 10px 0;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: #aaaaaa;
+}
+
+li:first-child::before {
+    background-color: #2ecc40;
+}
+
+li:nth-child(2)::before {
+    background-color: #ff851b;
+}
+
+li:nth-child(3)::before {
+    background-color: #0074d9;
+}
+.experience_in_frontend {
+  grid-area: in_frontent;
+  justify-self: center;
+  box-sizing: border-box;
+  width: 450px;
+  height: auto;
+  border: 1px solid grey; 
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+} 
+.experience_not_frontend_content{
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+}
+.experience_in_frontend_block{
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+}
+/* end experience */
+
+/* start interest's */
 .start-interests {
   grid-area: start-interests;
+  position: relative;  
+  height: 100vh;  
+  border-bottom: 1px solid grey;
 }
+.start-interests_title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.start-interests_conten {
+  display: flex;
+  justify-content: space-around;
+}
+.interest2 {
+}
+.interest2_photo {
+  
+}
+.interest2_content {
+  width: 400px;
+  margin: 20px 0px 0px 150px;
+}
+.interest1 {
+}
+.interest1_photo {
+}
+.interest1_content {
+  width: 400px;
+  margin: 0px 0px 50px -100px;
+}
+.interest1_photo_img2{ 
+  height: 500px;
+  border-radius: 30px 100px;
+}
+.interest1_photo_img1{
+  width: 550px;
+  
+  border-radius: 100px 30px;
+}
+/* end interes't */
+
+/* start get in touch */
 .last_block {
   grid-area: last_block;
 }
+/* end get in touch */
+
+/* start footer */
 .footer {
   grid-area: footer;
   background-color: aqua;
 }
+/* end footer */
