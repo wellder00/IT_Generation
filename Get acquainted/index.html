@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="free-png.ru-575.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AcquaintancE</title>
   </head>
   <body>
     <div class="wrapper">
@@ -15,18 +16,25 @@
         <div class="acquainted_conten">
           <h1>Let's get acquainted</h1>
           <div class="acquainted_button_block">
-            <button class="acquainted_buttom">
+
+            <form  action="#about">
+              <button class="acquainted_buttom button_block_link">About me</button>
+             </form>
+            
+            <!-- <button class="acquainted_buttom">
               <a class="button_block_link" href="#about">About me</a>
-            </button>
+            </button> -->
+
           </div>
+
         </div>
       </div>
       <!-- end let's get acquainted -->
 
       <!-- start about -->
       <div class="about">
-        <a name="to_top"></a>
-        <a name="about"></a>
+        <a id="to_top"></a>
+        <a id="about"></a>
         <div class="sidebar">
           <div class="sidebar_menu">
             <ul class="sidebar_list">
@@ -49,13 +57,13 @@
             <div class="my_photo">
               <img
                 class="title_about_photo"
-                src="../Get acquainted/image/IMG_8451(2).JPG"
+                src="image/IMG_8451(2).JPG"
                 alt=""
-              />
+              >
             </div>
             <div class="about_content">
               <span class="about_content_me"
-                >&nbsp &nbspHi! My name is Vladislav, I am 33 years old. I am
+                >&nbsp;&nbsp;Hi! My name is Vladislav, I am 33 years old. I am
                 here, because I want to change my work and to make good money,
                 also I want to work with clever interesting people because of
                 constant self-develop.</span
@@ -83,7 +91,7 @@
 
       <!-- start experience -->
       <div class="experience">
-        <a name="experience"></a>
+        <a id="experience"></a>
         <h2 class="experience_title">Experience</h2>
         <div class="experince_block_content">
           <div class="experience_not_frontend">
@@ -95,23 +103,23 @@
           </div>
           <div class="diagramblock">
             <div class="diagramblock_container">
-            <div class="pie-container">
-              <div id="js" class="pie"></div>
-              <div id="php" class="pie"></div>
-              <div id="html5" class="pie"></div>
-              <div id="css" class="pie"></div>
+              <div class="pie-container">
+                <div id="js" class="pie"></div>
+                <div id="php" class="pie"></div>
+                <div id="html5" class="pie"></div>
+                <div id="css" class="pie"></div>
+              </div>
             </div>
-          </div>
-          <div class="diagramblock1">
-            <div class="stats">
-              <ul class="lenguage">
-                <li class="css" data-name="css">CSS</li>
-                <li class="html" data-name="HTML5">HTML5</li>
-                <li class="php" data-name="PHP">PHP</li>
-                <li class="js" data-name="JS">JS</li>
-              </ul>
+            <div class="diagramblock1">
+              <div class="stats">
+                <ul class="lenguage">
+                  <li class="css" data-name="css">CSS</li>
+                  <li class="html" data-name="HTML5">HTML5</li>
+                  <li class="php" data-name="PHP">PHP</li>
+                  <li class="js" data-name="JS">JS</li>
+                </ul>
+              </div>
             </div>
-          </div>
           </div>
           <div class="experience_in_frontend">
             <div class="experience_in_frontend_block">
@@ -128,35 +136,34 @@
 
       <!-- start interest's -->
       <div class="start-interests">
-        <a name="interests"></a>
+        <a id="interests"></a>
         <h2 class="start-interests_title">Interest's</h2>
         <div class="start-interests_conten">
           <div class="interest2">
             <div class="interest2_photo">
               <img
                 class="interest1_photo_img2"
-                src="../Get acquainted/image/1.jpg"
+                src="image/1.jpg"
                 alt=""
-              />
+              >
             </div>
             <div class="interest2_content">
-              &nbsp One of my hobbies is playing badminton. I have been playing
+              &nbsp;One of my hobbies is playing badminton. I have been playing
               badminton for about 7 years, one workout every week.
             </div>
           </div>
           <div class="interest1">
             <div class="interest1_content">
-              &nbsp I have been playing the guitar since I was 17. But I play only for
-              myself because I have a terrible voice))).
+              &nbsp;I have been playing the guitar since I was 17. But I play
+              only for myself because I have a terrible voice))).
             </div>
             <div class="interest1_photo">
               <img
                 class="interest1_photo_img1"
-                src="../Get acquainted/image/2.jpg"
+                src="image/2.jpg"
                 alt=""
-              />
+              >
             </div>
-           
           </div>
         </div>
         <a class="to_top" href="#to_top">To top</a>
@@ -165,16 +172,33 @@
 
       <!-- start get in touch -->
       <div class="last_block">
-        <a name="last_block"></a>
+        <a id="last_block"></a>
         <h2 class="last_block_title">Get In Touch</h2>
-        <span class="last_block_information">If you need help, write to me!</span>
+        <span class="last_block_information"
+          >If you need help, write to me!</span
+        >
         <div class="last_block_content">
-          <form action="" class="form_block">
-            <p><textarea class="textarea_block" name="comment" cols="40" rows="3"placeholder="    Message"></textarea></p>
-            <p><input class="name_block" id="name" placeholder="   Full Name">
-            <input class="email_block" type="email" id="email" placeholder="   Email Address">
-            <input class="button_block" type="submit" value="Send"> </p>  
-        </form>
+          <form action="#" class="form_block">
+            <p>
+              <textarea
+                class="textarea_block"
+                name="comment"
+                cols="40"
+                rows="3"
+                placeholder="    Message"
+              ></textarea>
+            </p>
+            <p>
+              <input class="name_block" id="name" placeholder="   Full Name">
+              <input
+                class="email_block"
+                type="email"
+                id="email"
+                placeholder="   Email Address"
+              >
+              <input class="button_block" type="submit" value="Send" >
+            </p>
+          </form>
         </div>
         <a class="to_top" href="#to_top">To top</a>
       </div>
@@ -184,16 +208,32 @@
       <footer class="footer">
         <div class="block-link">
           <a class="link" href="https://www.facebook.com/" target="_blank">
-            <img class="footer_link_img"  src="../Get acquainted/image/Group 5.png" alt="">&nbsp&nbsp&nbspFacebook
+            <img
+              class="footer_link_img"
+              src="image/Group5.png"
+              alt=""
+            >&nbsp;&nbsp;&nbsp;Facebook
           </a>
           <a class="link" href="https://twitter.com/" target="_blank">
-            <img class="footer_link_img"  src="../Get acquainted/image/Group 6.png" alt="">&nbsp&nbsp&nbspTwitter
+            <img
+              class="footer_link_img"
+              src="image/Group6.png"
+              alt=""
+            >&nbsp;&nbsp;&nbsp;Twitter
           </a>
           <a class="link" href="https://www.instagram.com/" target="_blank">
-            <img class="footer_link_img"  src="../Get acquainted/image/Group 7.png" alt="">&nbsp&nbsp&nbspInstagram
+            <img
+              class="footer_link_img"
+              src="image/Group7.png"
+              alt=""
+            >&nbsp;&nbsp;&nbsp;Instagram
           </a>
           <a class="link" href="https://www.youtube.com/" target="_blank">
-            <img class="footer_link_img" src="../Get acquainted/image/Group 8.png" alt="">&nbsp&nbsp&nbspYouTube
+            <img
+              class="footer_link_img"
+              src="image/Group8.png"
+              alt=""
+            >&nbsp;&nbsp;&nbsp;YouTube
           </a>
         </div>
         <div class="copy">© wellder</div>
