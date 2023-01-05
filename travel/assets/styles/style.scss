@@ -1,0 +1,167 @@
+@import "normalize";
+@import "varibles";
+@import "fonts";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;700&family=Volkhov:wght@700&display=swap');
+@use "sass:math";
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+body{
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 124.5%;
+ letter-spacing: 0.005em;
+ color: #5E6282; 
+}
+
+.wrapper {
+ display: grid;
+ grid-template-areas: 
+ 'header'
+ 'hero-content'
+ 'sevices'
+ 'destinations'
+ 'book-a-trip'
+ 'testimonials-section'
+ 'logos'
+ 'subscribe-section'
+ 'footer';
+}
+
+._container {
+  max-width: 1167px;
+  margin: 0px auto;
+  display: flex;
+}
+
+// first block start
+.header {
+  grid-area: header;  
+}
+.header__container {
+  
+}
+._container {
+}
+.logo {
+}
+.header__nav {
+}
+.menu__list {
+}
+.menu_item {
+}
+.menu_item-elem1 {
+}
+.menu_link {
+}
+.dropbtn {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 140px;
+}
+
+.dropbtn
+{
+width: 40px;
+}
+
+.dropbtn::after {
+  background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 16px;
+}
+
+.dropdown-content a:first-child
+{
+background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+}
+
+.dropdown-content a:last-child
+{
+background: url('') no-repeat left center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 0 2px 25px;
+  text-decoration: none;
+  display: block;  
+
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 65px
+}
+.hero-content {
+  grid-area: hero-content
+}
+// first block end
+
+// second block start
+.sevices {
+  grid-area: sevices;
+}
+// second block end
+
+// third block start
+.destinations {
+  grid-area: destinations;
+}
+// third block end
+
+// fourth block start
+.book-a-trip {
+  grid-area: book-a-trip;
+}
+// fourth block end
+
+// fifth block start
+.testimonials-section {
+  grid-area: testimonials-section;
+}
+// fifth block end
+
+// sixth block start
+.logos {
+  grid-area: logos;
+}
+// sixth block end
+
+// seventh block start
+.subscribe-section {
+  grid-area: subscribe-section;
+}
+// seventh block end
+
+// eighth block start
+.footer {
+  grid-area: footer;
+}
+// eighth block end
