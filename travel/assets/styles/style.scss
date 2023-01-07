@@ -1,24 +1,23 @@
+@use "sass:math";
 @import "normalize";
 @import "varibles";
 @import "fonts";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;700&family=Volkhov:wght@700&display=swap');
-@use "sass:math";
-@function rem($px) {
-  $result: math.div($px, 16) + rem;
-  @return $result;
-}
+
 
 body{
  font-family: 'Poppins';
  font-style: normal;
  font-weight: 500;
- font-size: 20px;
+ @include fluidFontSize(16px, 20px, 480px, 1280px, 18px);
  line-height: 124.5%;
  letter-spacing: 0.005em;
- color: #5E6282; 
+ color: #5E6282;  
 }
+
+
 
 .wrapper {
  display: grid;
@@ -38,32 +37,136 @@ body{
   max-width: 1167px;
   margin: 0px auto;
   display: flex;
+  align-items: center;   
 }
 
 // first block start
 .header {
-  grid-area: header;  
-}
-.header__container {
+  position: relative;
+  grid-area: header;
+  margin-top: 48,7px;  
   
 }
-._container {
+.header__right-bg{
+  position: absolute;
+  z-index: -2;
+  right: 0;  
+  .decore{
+    width: 100%;
+    height: auto;   
+  }
 }
+.header__woman-planes{
+  position: relative;
+  width: 100%;
+   height: auto;  
+}
+.header__woman-bg{
+  position: absolute;
+  z-index: -1;
+  top: 105px;
+  right: 91.13px; 
+  .img-woman{
+    width: 100%;
+    height: auto;   
+  }
+}
+
+.righ-plane{
+  position: absolute;
+  z-index: -1;
+  top: 105px;
+  right: 91.13px; 
+  .righ-plane__not-animation{
+    max-width: 100%;
+    max-height: auto;   
+    transform: rotate(-31.84deg);   
+}
+}
+
 .logo {
+  width: 114.91;
+  height: 33.99;
 }
-.header__nav {
+.nav__list_border-nav1{
+  @include border-nav;
+  margin-right: 49px;
+  margin-left: 222.17px;
+  overflow: hidden;  
 }
-.menu__list {
+.nav__list_border-nav1:hover{
+  border: 1px solid rgba(0,0,0,1);
 }
-.menu_item {
+.nav__list_border-nav2{
+  @include border-nav;
+  margin-right: 58px;
 }
-.menu_item-elem1 {
+.nav__list_border-nav2:hover{
+  border: 1px solid rgba(0,0,0,1);
 }
+.nav__list_border-nav3{
+  @include border-nav;
+  margin-right: 56px;
+}
+.nav__list_border-nav3:hover{
+  border: 1px solid rgba(0,0,0,1);
+}
+.nav__list_border-nav4{
+  @include border-nav;
+  margin-right: 80px;
+}
+.nav__list_border-nav4:hover{
+  border: 1px solid rgba(0,0,0,1);
+}
+.nav__list_border-nav5{
+  @include border-nav;
+  margin-right: 46px;
+}
+.nav__list_border-nav5:hover{
+  border: 1px solid rgba(0,0,0,1);
+}
+.nav__list_border-nav6{
+  @include border-nav;
+  margin-right: 36px;
+}
+.nav__list_border-nav6:hover{
+  border: 1px solid rgba(0,0,0,1);
+  
+}
+.nav__list{
+  display: flex;
+  list-style: none; 
+  align-items: center;
+  padding: 0;
+}
+
 .menu_link {
+  text-decoration: none;
+  white-space: nowrap;  
+  @include fonts-nav;
+  &:hover{
+    color: rgb(25, 98, 98);    
+}
+}
+.nav__item{
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.nav__item:hover{
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
 .dropbtn {
   padding: 5px;
   cursor: pointer;
+  width: 40px;
+  @include fonts-nav;   
 }
 
 .dropdown {
@@ -74,14 +177,16 @@ body{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #FFF1DA;
   width: 140px;
-}
+  border: 1px solid rgb(36, 36, 43);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 2px;}
 
-.dropbtn
-{
-width: 40px;
-}
 
 .dropbtn::after {
   background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
@@ -90,34 +195,49 @@ width: 40px;
   position: absolute;
   right: 0;
   top: 7px;
-  width: 16px;
+  width: 16px;    
 }
 
 .dropdown-content a:first-child
 {
 background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  @include fluidFontSize(15px, 17px, 480px, 1280px, 16px);  
+  line-height: 22px; 
+  color: $top-nav; 
 }
 
-.dropdown-content a:last-child
-{
+.dropdown-content a:last-child{
 background: url('') no-repeat left center;
+font-family: 'Google Sans';
+font-style: normal;
+font-weight: 400;
+@include fluidFontSize(15px, 17px, 480px, 1280px, 16px);  
+line-height: 22px; 
+color: $top-nav; 
 }
 
 .dropdown-content a {
   color: black;
   padding: 2px 0 2px 25px;
   text-decoration: none;
-  display: block;  
-
+  display: block;    
 }
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   width: 65px
+  
 }
 .hero-content {
   grid-area: hero-content
