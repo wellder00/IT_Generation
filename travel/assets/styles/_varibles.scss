@@ -33,6 +33,17 @@ $top-nav: #212832;
   @return $result;
 }
 
+@function vw($px) {
+  $result: math.round((math.div($px, 1167) * 100) )+ vw;
+  @return $result;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+ }
+
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
     @return $number / ($number * 0 + 1);

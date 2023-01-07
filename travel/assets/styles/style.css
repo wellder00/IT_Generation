@@ -330,11 +330,12 @@ template {
   src: url("../styles/fonts/ProductSans-Medium.ttf");
 }
 body {
+  min-height: 100vh;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 124.5%;
+  line-height: 30px;
   letter-spacing: 0.005em;
   color: #5E6282;
 }
@@ -352,14 +353,13 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-areas: "header" "hero-content" "sevices" "destinations" "book-a-trip" "testimonials-section" "logos" "subscribe-section" "footer";
+  grid-template-areas: "header" "sevices" "destinations" "book-a-trip" "testimonials-section" "logos" "subscribe-section" "footer";
 }
 
 ._container {
   max-width: 1167px;
   margin: 0px auto;
-  display: flex;
-  align-items: center;
+  padding: 0 15px;
 }
 
 .header {
@@ -368,18 +368,18 @@ body {
   margin-top: 48, 7px;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+
 .header__right-bg {
   position: absolute;
   z-index: -2;
   right: 0;
 }
 .header__right-bg .decore {
-  width: 100%;
-  height: auto;
-}
-
-.header__woman-planes {
-  position: relative;
   width: 100%;
   height: auto;
 }
@@ -397,8 +397,8 @@ body {
 
 .righ-plane {
   position: absolute;
-  z-index: -1;
-  top: 105px;
+  z-index: -2;
+  top: 208px;
   right: 91.13px;
 }
 .righ-plane .righ-plane__not-animation {
@@ -407,9 +407,51 @@ body {
   transform: rotate(-31.84deg);
 }
 
+.left-plane {
+  position: absolute;
+  z-index: 1;
+  top: 161px;
+  right: 575.13px;
+}
+.left-plane .left-plane__animation {
+  max-width: 100%;
+  max-height: auto;
+  transform: rotate(-31.84deg);
+}
+.left-plane .left-plane__animation:hover {
+  animation: plane 3s ease-in-out infinite;
+  -webkit-animation: plane 3s LI infinite;
+}
+@keyframes plane {
+  25% {
+    transform: translate(150px, -95px) rotate(-45deg) scale(0.7);
+    -webkit-transform: translate(150px, -95px) rotate(-45deg) scale(0.7);
+    -moz-transform: translate(150px, -95px) rotate(-45deg) scale(0.7);
+    -ms-transform: translate(150px, -95px) rotate(-45deg) scale(0.7);
+    -o-transform: translate(150px, -95px) rotate(-45deg) scale(0.7);
+  }
+  45% {
+    opacity: 0.4;
+    transform: translate(350px, -355px) rotate(-45deg) scale(0.3);
+    -webkit-transform: translate(350px, -355px) rotate(-45deg) scale(0.3);
+    -moz-transform: translate(350px, -355px) rotate(-45deg) scale(0.3);
+    -ms-transform: translate(350px, -355px) rotate(-45deg) scale(0.3);
+    -o-transform: translate(350px, -355px) rotate(-45deg) scale(0.3);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-500px, -250px) rotate(65deg) scale(0.5);
+    -webkit-transform: translate(-500px, -250px) rotate(65deg) scale(0.5);
+    -moz-transform: translate(-500px, -250px) rotate(65deg) scale(0.5);
+    -ms-transform: translate(-500px, -250px) rotate(65deg) scale(0.5);
+    -o-transform: translate(-500px, -250px) rotate(65deg) scale(0.5);
+  }
+}
+
 .logo {
-  width: 114.91;
-  height: 33.99;
+  width: auto;
+  max-width: 114.91;
+  height: auto;
 }
 
 .nav__list_border-nav1 {
@@ -426,8 +468,8 @@ body {
   -moz-transition: border, 0.5s;
   -ms-transition: border, 0.5s;
   -o-transition: border, 0.5s;
-  margin-right: 49px;
-  margin-left: 222.17px;
+  margin-right: 4.2vw;
+  margin-left: 19.45vw;
   overflow: hidden;
 }
 
@@ -470,7 +512,7 @@ body {
   -moz-transition: border, 0.5s;
   -ms-transition: border, 0.5s;
   -o-transition: border, 0.5s;
-  margin-right: 56px;
+  margin-right: 5vw;
 }
 
 .nav__list_border-nav3:hover {
@@ -491,7 +533,7 @@ body {
   -moz-transition: border, 0.5s;
   -ms-transition: border, 0.5s;
   -o-transition: border, 0.5s;
-  margin-right: 80px;
+  margin-right: 7vw;
 }
 
 .nav__list_border-nav4:hover {
@@ -512,7 +554,7 @@ body {
   -moz-transition: border, 0.5s;
   -ms-transition: border, 0.5s;
   -o-transition: border, 0.5s;
-  margin-right: 46px;
+  margin-right: 4vw;
 }
 
 .nav__list_border-nav5:hover {
@@ -533,7 +575,7 @@ body {
   -moz-transition: border, 0.5s;
   -ms-transition: border, 0.5s;
   -o-transition: border, 0.5s;
-  margin-right: 36px;
+  margin-right: 3vw;
 }
 
 .nav__list_border-nav6:hover {
@@ -705,8 +747,70 @@ body {
   width: 65px;
 }
 
-.hero-content {
-  grid-area: hero-content;
+.desc {
+  width: 100%;
+  max-width: 547px;
+  height: auto;
+  margin-top: 11vw;
+}
+
+.desc__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #DF6951;
+}
+@media (min-width: 480px) {
+  .desc__title {
+    font-size: 18px;
+    font-size: calc( 0.005 * 100vw + 13.6px );
+  }
+}
+@media (min-width: 1280px) {
+  .desc__title {
+    font-size: 20px;
+  }
+}
+
+.desc__text {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: #181E4B;
+  margin-top: 2vw;
+}
+@media (min-width: 480px) {
+  .desc__text {
+    font-size: 60px;
+    font-size: calc( 0.0675 * 100vw + -2.4px );
+  }
+}
+@media (min-width: 1280px) {
+  .desc__text {
+    font-size: 84px;
+  }
+}
+
+.desc__heading {
+  margin-top: 3vw;
+}
+
+.desc__botton {
+  margin-top: 3vw;
+  display: flex;
+  gap: 4vw;
+}
+
+.desc__botton_first-botton {
+  width: 15vw;
+  height: 5vw;
+  background: yellow;
 }
 
 .sevices {
