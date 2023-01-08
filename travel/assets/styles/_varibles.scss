@@ -11,6 +11,27 @@ $top-nav: #212832;
   color: $top-nav;  
 }
 
+@mixin font-title {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  @include fluidFontSize(30px, 50px, 480px, 1280px, 40px); 
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #14183E;
+}
+
+@mixin font-title-card {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #1E1D4C;
+}
+
 @mixin border-nav {
   box-sizing: border-box;
   padding: 5px 5px;
