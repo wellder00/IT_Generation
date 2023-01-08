@@ -859,6 +859,14 @@ body {
 
 .sevices {
   grid-area: sevices;
+  position: relative;
+}
+.sevices::after {
+  content: url(../images/Group\ 4.png);
+  position: absolute;
+  top: 90px;
+  right: 58px;
+  z-index: -2;
 }
 
 .sevices__content {
@@ -1144,6 +1152,83 @@ body {
 
 .book-a-trip {
   grid-area: book-a-trip;
+  border: 1px solid grey;
+}
+
+.book-a-trip__inner {
+  display: flex;
+  gap: 118px;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-a-trip__section1_subheading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+@media (min-width: 480px) {
+  .book-a-trip__section1_subheading {
+    font-size: 17px;
+    font-size: calc( 0.0025 * 100vw + 14.8px );
+  }
+}
+@media (min-width: 1280px) {
+  .book-a-trip__section1_subheading {
+    font-size: 18px;
+  }
+}
+
+.book-a-trip__section1_tittle {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #14183E;
+  margin-bottom: 31px;
+  text-align: start;
+}
+@media (min-width: 480px) {
+  .book-a-trip__section1_tittle {
+    font-size: 40px;
+    font-size: calc( 0.025 * 100vw + 18px );
+  }
+}
+@media (min-width: 1280px) {
+  .book-a-trip__section1_tittle {
+    font-size: 50px;
+  }
+}
+
+.book-a-trip__section1_content-block_block::before {
+  content: url(../icons/Group\ 7.png);
+}
+
+.book-a-trip__section1_content-block_block h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+  margin-bottom: 4px;
+}
+@media (min-width: 480px) {
+  .book-a-trip__section1_content-block_block h5 {
+    font-size: 15px;
+    font-size: calc( 0.0025 * 100vw + 12.8px );
+  }
+}
+@media (min-width: 1280px) {
+  .book-a-trip__section1_content-block_block h5 {
+    font-size: 16px;
+  }
+}
+
+.book-a-trip__section1_content-block_block p {
+  display: inline-block;
+  margin: 0;
 }
 
 .testimonials-section {

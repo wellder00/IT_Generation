@@ -350,7 +350,15 @@ margin-top: 24px;
 
 // second block start
 .sevices {
-  grid-area: sevices;    
+  grid-area: sevices;  
+  position: relative;
+  &::after{
+    content: url(../images/Group\ 4.png);
+    position: absolute;
+    top: 90px;
+    right: 58px;
+    z-index: -2;
+  }  
 }
 
 .sevices__content {
@@ -366,6 +374,7 @@ margin-top: 24px;
   @include fluidFontSize(16px, 18px, 480px, 1280px, 17px);
   line-height: 27px;
   margin-bottom: 10px;
+ 
 }
 
 .sevices__titlle {
@@ -483,8 +492,7 @@ margin-top: 24px;
 
 // third block start
 .destinations {
-  grid-area: destinations;
-  
+  grid-area: destinations;  
 }
 .destinations__content{
   position: relative;
@@ -577,7 +585,45 @@ padding: 0 20px;
 // fourth block start
 .book-a-trip {
   grid-area: book-a-trip;
+  border: 1px solid grey;
 }
+
+.book-a-trip__inner{
+  display: flex;
+  gap: 118px ;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-a-trip__section1_subheading{
+  font-weight: 600;
+  @include fluidFontSize(16px, 18px, 480px, 1280px, 17px);
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.book-a-trip__section1_tittle{
+@include font-title;
+  margin-bottom: 31px;  
+  text-align: start;
+}
+
+
+.book-a-trip__section1_content-block_block::before{
+  content: url(../icons/Group\ 7.png);
+}
+
+.book-a-trip__section1_content-block_block h5{  
+  font-weight: 600;
+  @include fluidFontSize(14px, 16px, 480px, 1280px, 15px);
+  line-height: 27px; 
+  margin-bottom: 4px;
+}
+
+.book-a-trip__section1_content-block_block p{
+  display: inline-block;
+  margin: 0;
+}
+
 // fourth block end
 
 // fifth block start
