@@ -337,7 +337,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.005em;
-  color: #5E6282;
+  color: #5e6282;
 }
 @media (min-width: 480px) {
   body {
@@ -684,7 +684,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FFF1DA;
+  background-color: #fff1da;
   width: 140px;
   border: 1px solid rgb(36, 36, 43);
   border-radius: 5px;
@@ -783,7 +783,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #DF6951;
+  color: #df6951;
 }
 @media (min-width: 480px) {
   .desc__title {
@@ -804,7 +804,7 @@ body {
   font-size: 30px;
   line-height: 89px;
   letter-spacing: -0.04em;
-  color: #181E4B;
+  color: #181e4b;
   margin-top: 24px;
 }
 @media (min-width: 480px) {
@@ -833,7 +833,7 @@ body {
 .desc__botton_first-botton {
   width: 170px;
   height: 60px;
-  background: #F1A501;
+  background: #f1a501;
   color: white;
   border: none;
   border-radius: 7px;
@@ -858,7 +858,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 26px;
-  color: #686D77;
+  color: #686d77;
   text-align: end;
   border: none;
   background-color: white;
@@ -870,7 +870,7 @@ body {
   cursor: pointer;
 }
 .desc__botton_second-botton:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
 
@@ -890,7 +890,7 @@ body {
   position: relative;
 }
 .sevices::after {
-  content: url(../images/Group\ 4.png);
+  content: url(../images/Group4.png);
   position: absolute;
   top: 90px;
   right: 58px;
@@ -1005,7 +1005,7 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   z-index: 1;
 }
@@ -1014,7 +1014,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #DF6951;
+  background: #df6951;
   border-radius: 30px 0px 10px;
   left: -40px;
   top: 190px;
@@ -1027,7 +1027,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #DF6951;
+  background: #df6951;
   border-radius: 30px 0px 10px;
   left: -40px;
   top: 190px;
@@ -1291,7 +1291,7 @@ body {
   position: absolute;
   width: 485px;
   height: 459px;
-  background: #59B1E6;
+  background: #59b1e6;
   opacity: 0.8;
   filter: blur(75px);
   -webkit-filter: blur(75px);
@@ -1308,12 +1308,12 @@ body {
   z-index: 2;
   width: 370px;
   height: 450px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 26px;
 }
 .book-a-trip__section2_inner::after {
-  content: url(../icons/heart\ \(6\)\ 1.svg);
+  content: url(../icons/heart1.svg);
   position: absolute;
   right: 25px;
   bottom: 29px;
@@ -1350,7 +1350,7 @@ body {
   margin: 30px 0px 31px 0px;
 }
 .book-a-trip__section2__last-el::before {
-  content: url(../icons/building\ 1.svg);
+  content: url(../icons/building1.svg);
   margin: 0px 15px 0px 25px;
 }
 
@@ -1360,7 +1360,7 @@ body {
   position: absolute;
   display: flex;
   gap: 11px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 18px;
   z-index: 8;
@@ -1389,7 +1389,7 @@ body {
   font-size: 14px;
   line-height: 124.5%;
   letter-spacing: -0.035em;
-  color: #84829A;
+  color: #84829a;
 }
 
 .book-a-trip__section2_popup_right-block h6 {
@@ -1415,7 +1415,7 @@ body {
   color: black;
 }
 .book-a-trip__section2_popup_right-block span .subtitle {
-  color: #8A79DF;
+  color: #8a79df;
 }
 
 .book-a-trip__section2_progress {
@@ -1429,7 +1429,7 @@ body {
 .book-a-trip__section2_progress_progress-box {
   width: 73px;
   height: 5px;
-  background: #8A79DF;
+  background: #8a79df;
   border-radius: 30px;
 }
 
@@ -1452,7 +1452,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   text-transform: uppercase;
-  color: #5E6282;
+  color: #5e6282;
   margin-bottom: 8px;
 }
 
@@ -1502,7 +1502,7 @@ body {
 }
 
 .testimonials-section_page2_wrap {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 10px;
   box-sizing: border-box;
@@ -1526,7 +1526,7 @@ body {
 }
 
 .logos__block:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 10px;
 }
@@ -1571,7 +1571,7 @@ body {
   font-size: 33px;
   line-height: 54px;
   text-align: center;
-  color: #5E6282;
+  color: #5e6282;
 }
 
 .subscribe-section_bg {
@@ -1604,7 +1604,7 @@ body {
   z-index: 3;
   width: 421px;
   height: 68px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   border: none;
   padding: 0px 20px;
@@ -1613,13 +1613,13 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 17px;
-  color: #39425D;
+  color: #39425d;
 }
 
 .subscribe-section_form_botton {
   width: 180px;
   height: 68px;
-  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   border-radius: 10px;
   color: rgb(255, 255, 255);
   border: none;
@@ -1630,7 +1630,7 @@ body {
 }
 
 input::placeholder {
-  background: url(../icons/Group\ 46.png) no-repeat;
+  background: url(../icons/Group46.png) no-repeat;
 }
 
 .footer {
@@ -1649,7 +1649,7 @@ input::placeholder {
   font-weight: 500;
   font-size: 44px;
   line-height: 66px;
-  color: #181E4B;
+  color: #181e4b;
   margin-bottom: 19px;
 }
 
